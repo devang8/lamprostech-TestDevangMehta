@@ -1,4 +1,4 @@
-nums = [2,7,11,15]
+nums = list(map(int, input()))
 target = int(input("Enter target: "))
 result = []
 
