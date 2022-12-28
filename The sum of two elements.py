@@ -1,8 +1,11 @@
-nums = list(map(int, input()))
-target = int(input())
+nums = [2,7,11,15]
+target = int(input("Enter target: "))
 result = []
-for i in range(nums + 1):
-  if(nums[i] + nums[i + 1]) == target:   #checking whether the indices of the list adds upto the target
-    result.append(i)                     #adding indices to the result list for output purpose
-    result.append(i + 1)
-print(result)
+
+for i in range(len(nums)):
+    first = nums[i]
+    second = nums[i+1]
+    if(first + second) == target:   #checking whether elements adds upto the target or not
+        result.append(i)
+        result.append(i+1)
+        print(result)
